@@ -5,6 +5,7 @@ import Button from './Button';
 export default function Calculator() {
     const [display, setDisplay] = useState("");
 
+    //Sets the value of each button
     const buttons = [
         "7", "8", "9", "/", 
         "4", "5", "6", "*", 
@@ -13,6 +14,7 @@ export default function Calculator() {
         "Clear",
     ]; 
 
+    // handles when a button is clicked and uses eval() to complete +,-,/,*
     const handleClick = (value) => {
         console.log(value);
         if (value === "=") {
